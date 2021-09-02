@@ -3,7 +3,7 @@
 ![Tests](https://github.com/SynergiTech/creditsafe-connect/workflows/Tests/badge.svg)
 
 ```
-composer require dinuea/creditsafe-connect
+composer require synergitech/creditsafe-connect
 ```
 
 ## Usage
