@@ -3,7 +3,7 @@
 ![Tests](https://github.com/SynergiTech/creditsafe-connect/workflows/Tests/badge.svg)
 
 ```
-composer require synergitech/creditsafe-connect
+composer require dinuea/creditsafe-connect
 ```
 
 ## Usage
@@ -41,7 +41,11 @@ foreach ($search as $result) {
 
 ### Get company report
 ```php
-$creditsafe->companies()->get('GB001-0-03977902');
+$company=$creditsafe->companies()->get('GB001-0-03977902');
+
+$directors=$company->getCurrentDirectors();
+$shareholders=$company->getShareHolders();
+$personsWithSignificantControl=$company->getPersonsWithSignificantControl();
 ```
 
 ## Running tests
